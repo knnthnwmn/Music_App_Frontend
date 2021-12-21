@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col, FloatingLabel, Form, Button, Modal } from "react-bootstrap/";
-import "./GatePage.css";
+import "./LoginPage.css";
 
-const GatePage = (props) => {
+const LoginPage = (props) => {
     const user = props.user;
     const handleSubmit = (event) => {
         
@@ -17,17 +17,17 @@ const GatePage = (props) => {
       };
      
   return (
-    <Container className="gatePageBackground">
+    <Container className="LoginBackground">
       <Row className="center" >
       <Col md={6} xs={12}>
         <img
           className="logo"
           src="/assets/img/logo.png"
-          alt="Christmas Stories"
+          alt="Welcom Artist"
         />
         <p className="text-white">
-          Join us for the holidays, enjoy playing games, discussing recipes and
-          celebrating holiday traditions
+          {/* Join us for the holidays, enjoy playing games, discussing recipes and
+          celebrating holiday traditions */}
         </p>
       </Col>
       <Col md={6} xs={12}>
@@ -50,7 +50,7 @@ const GatePage = (props) => {
               </Form>
             </Modal.Body>
             <Modal.Footer className="d-grid gap-2 mb-5">
-                <p>Not a ChristmasStories user? Register</p>
+                <p>Not a Music Maker user? Register</p>
             </Modal.Footer>
           </Modal.Dialog>
         </>
@@ -62,4 +62,6 @@ const GatePage = (props) => {
   );
 };
 
-export default GatePage;
+export default LoginPage;
+
+
