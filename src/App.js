@@ -22,7 +22,6 @@ const App = (props) => {
   };
 
   const register = async (user) => {
-    
     await axios
       .post(`http://localhost:5000/api/users/register`, user)
       .then((res) => {
@@ -38,9 +37,6 @@ const App = (props) => {
     if (jwt) setUser(jwtDecode(jwt));
   }, []);
 
- 
- 
- 
   return (
     <BrowserRouter>
       <Routes>
@@ -55,17 +51,17 @@ const App = (props) => {
           />
         )}
         {!user && (
-            <Route
-              path="/register"
-              element={
-                <RegistrationPage
-                  login={register}
-                  user={user}
-                  setUser={setUser}
-                />
-              }
-            />
-          )}
+          <Route
+            path="/register"
+            element={
+              <RegistrationPage
+                login={register}
+                user={user}
+                setUser={setUser}
+              />
+            }
+          />
+        )}
       </Routes>
     </BrowserRouter>
   );

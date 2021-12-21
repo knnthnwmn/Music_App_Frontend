@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Container,
-  Row,
-  Col,
-  FloatingLabel,
-  Form,
-  Button,
-  Modal,
-} from "react-bootstrap/";
+import { FloatingLabel, Form, Button, Modal,} from "react-bootstrap/";
 import "./LoginPage.css";
 
 const LoginPage = (props) => {

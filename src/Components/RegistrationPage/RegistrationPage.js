@@ -14,15 +14,7 @@ const RegistrationPage = (props) => {
       form.append("email", props.value2);
       form.append("password", props.value3);
       form.append("audio", props.value4);
-      // const userData = {
-      //   firstName: event.target[0].value,
-      //   lastName: event.target[1].value,
-      //   email: event.target[2].value,
-      //   password: event.target[3].value,
-      //   audio: event.target[4].value,
-      // }
 
-      // Display the key/value pairs
 
       props.setFormData(form);
       props.register();
