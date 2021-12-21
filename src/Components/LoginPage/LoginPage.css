@@ -1,12 +1,11 @@
-
-.LoginBackground{
-    background-image: url("./recorder.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.bg {
+  background-image: url("recorder.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.logo{width: 60%;}
-
-.center{display: 'flex'; justify-content: center; align-items: center; height: '100vh'}
+.register {
+  color: azure;
+}
