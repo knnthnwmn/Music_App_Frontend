@@ -1,11 +1,16 @@
 .bg {
-  background-image: url("recorder.jpg");
-  height: 100%;
-  background-position: center;
+  background-image: url("./Audiobg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
 
-.register {
-  color: azure;
+.text-white {
+  color: aliceblue;
+}
+
+.footer {
+  color: aliceblue;
 }

@@ -31,9 +31,9 @@ const App = (props) => {
       });
   };
 
-  const jwt = localStorage.getItem("token");
   useEffect(() => {
     console.log("Effects is running");
+    const jwt = localStorage.getItem("token");
     if (jwt) setUser(jwtDecode(jwt));
   }, []);
 
@@ -63,6 +63,15 @@ const App = (props) => {
           />
         )}
       </Routes>
+        {user && (
+          <>
+            <h1>{user.firstName}</h1>
+            <audio
+              controls
+              src={`http://localhost:5000/${user.audioFiles[0].audio}`}
+            ></audio>
+          </>
+        )}
     </BrowserRouter>
   );
 };

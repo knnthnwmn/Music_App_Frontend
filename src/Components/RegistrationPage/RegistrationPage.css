@@ -1,6 +1,6 @@
 .bg {
-    background-image: url("recorder.jpg");
-    height: 100%;
+    background-image: url("Audiobg.jpg");
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
