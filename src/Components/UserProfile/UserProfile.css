@@ -1,0 +1,24 @@
+.audioimage {
+  background-image: url("./newaudio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+}
+
+h2 {
+  color: aliceblue;
+}
+
+h3 {
+  color: rgb(253, 253, 253);
+  text-align: left;
+font-size: 150%;
+}
+

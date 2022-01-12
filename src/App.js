@@ -5,6 +5,7 @@ import axios from "axios";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import RegistrationPage from "./Components/RegistrationPage/RegistrationPage";
+import TimeLine from "./Components/TimeLine/TimeLine";
 
 const App = (props) => {
   const [user, setUser] = useState(null);
@@ -62,16 +63,14 @@ const App = (props) => {
             }
           />
         )}
-      </Routes>
         {user && (
-          <>
-            <h1>{user.firstName}</h1>
-            <audio
-              controls
-              src={`http://localhost:5000/${user.audioFiles[0].audio}`}
-            ></audio>
-          </>
+          <Route
+            path="/"
+            element={
+            <TimeLine user={user} setUser={setUser} />}
+          />
         )}
+      </Routes>
     </BrowserRouter>
   );
 };
